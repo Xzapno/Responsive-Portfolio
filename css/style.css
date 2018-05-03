@@ -20,7 +20,7 @@ header {
 }
 
 .headCenter {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0px;
 }
@@ -42,12 +42,12 @@ header {
 
 .container {
     clear: both;
-    width:900px;
+    max-width: 900px;
     padding: 30px 30px 35px 30px;
     margin: 0 auto;
     background: white;
     border: 1px solid #dddddd;
-}
+} 
 
 footer {
     width: 100%;
@@ -59,6 +59,7 @@ footer {
     color: white;
     font-size: 10px;
     text-align: center;
+    clear: both;
 }
 
 /** === Text Elements === */
@@ -67,6 +68,7 @@ h1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 36px;
     color:white;
+    text-align: center;
 }
 
 h2 {
@@ -156,4 +158,131 @@ input[type=submit] {
     cursor: pointer;
 }
 
+/* ==== fMedia Queriess === */
 
+@media screen and (max-width: 980px) {
+    
+    .headCenter {
+        max-width:980px;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    .nav {
+        float: right;
+        align-content: center;
+        margin-right: 10px;
+    }
+    
+    .container {
+        clear: both;
+        max-width: 650px;
+        float: left;
+        background: white;
+        border: 1px solid #dddddd;
+    }
+
+    input[type=text] {
+        max-width: 588px;
+        padding: 5px;
+        margin: 8px 0px 20px 0px;
+        font-size: 16px;
+        color: #777777;
+    }
+    
+    input[type=textarea] {
+        max-width: 588px;
+        height: 200px;
+        padding: 5px;
+        margin: 8px 0px 20px 0px;
+        font-size: 16px;
+        color: #777777;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .headCenter {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    .container {
+        clear: both;
+        max-width: 650px;
+        margin: 0px 20px 0px 20px;
+        background: white;
+        border: 1px solid #dddddd;
+    }
+    .portImage {
+        margin: 40px 40px 0px 0px;
+    }
+    
+
+}
+
+@media screen and (max-width: 640px) {
+
+    header {
+        width: 100%;
+        height: 156px;
+        margin: 0px 0px 40px 0px;
+        padding: 0px;
+        background-color: #ffffff;
+        border-bottom: 2px solid #cccccc;
+    }
+    
+    .headCenter {
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+        height: 90px;
+        background-color: #4aaaa5;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    
+    .nav {
+        width: 100%;
+        height: 65px;
+        text-align: center;
+    }
+
+    .container {
+        clear: both;
+        max-width: 535px;
+        margin: 0px 20px 0px 20px;
+        background: white;
+        border: 1px solid #dddddd;
+    }
+
+    ul {
+        align-content: center;
+        text-align: center;
+    }
+
+
+    input[type=text] {
+        max-width: 475px;
+        padding: 5px;
+        margin: 8px 0px 20px 0px;
+        font-size: 16px;
+        color: #777777;
+    }
+    
+    input[type=textarea] {
+        max-width: 475px;
+        height: 200px;
+        padding: 5px;
+        margin: 8px 0px 20px 0px;
+        font-size: 16px;
+        color: #777777;
+    }
+
+}
