@@ -1,5 +1,9 @@
 /* === Layout Elements === */
 
+html {
+    height: 100%;
+}
+
 body {
     height: 100%;
     margin: 0px;
@@ -8,6 +12,8 @@ body {
     font-size: 16px;
     color: #777777;
     text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -47,19 +53,47 @@ header {
     margin: 0 auto;
     background: white;
     border: 1px solid #dddddd;
+    flex: 1 0 auto;
 } 
+
+.bioImage {
+    float: left;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bio {
+    width: 75%;
+    float: left;
+    vertical-align: top;
+}
 
 footer {
     width: 100%;
-    padding: 30px 0px 4px 0px;
-    margin: 0px;
     background-color: #666;
     border-top: 10px solid #4aaaa5;
+    margin-top: 40px;
+    padding-top:10px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     clear: both;
+    flex-shrink: 0;
+}
+
+#copyright {
+    width: 90%;
+    height: 40px;
+    text-align: center;
+    float: left;
+}
+
+#social {
+    width: 10%;
+    float: right;
+    vertical-align: top
 }
 
 /** === Text Elements === */
@@ -78,7 +112,7 @@ h2 {
 }
 
 .firstParagraph {
-    margin: 30px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
 }
 
 li {
@@ -108,6 +142,9 @@ a:hover {
 .bioPic {
     margin: 20px 14px 0px 0px;
     float: left;
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
 }
 
 .portImage {
@@ -119,6 +156,14 @@ a:hover {
     content: "";
     clear: both;
     display: table;
+}
+
+#linked:hover {
+    opacity: 0.7;
+}
+
+#github:hover {
+    opacity: 0.7;
 }
 
 
@@ -169,7 +214,7 @@ input[type=submit] {
     }
 
     .nav {
-        float: right;
+
         align-content: center;
         margin-right: 10px;
     }
@@ -199,6 +244,8 @@ input[type=submit] {
         color: #777777;
     }
 
+    footer
+
 
 }
 
@@ -220,6 +267,18 @@ input[type=submit] {
     .portImage {
         margin: 40px 40px 0px 0px;
     }
+
+    #copyright {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+    }
+    
+    #social {
+        width: 100%;
+        vertical-align: top
+    }
+
     
 
 }
@@ -237,6 +296,7 @@ input[type=submit] {
     
     .headCenter {
         width: 100%;
+        height: 156px;
     }
 
     .logo {
@@ -249,6 +309,8 @@ input[type=submit] {
     }
     
     .nav {
+        display: block;
+        margin: 0 auto;
         width: 100%;
         height: 65px;
         text-align: center;
@@ -265,6 +327,22 @@ input[type=submit] {
     ul {
         align-content: center;
         text-align: center;
+        margin-left: -85px;
+    }
+
+    li {
+        text-align: center;
+    }
+
+    #copyright {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+    }
+    
+    #social {
+        width: 100%;
+        vertical-align: top
     }
 
 
