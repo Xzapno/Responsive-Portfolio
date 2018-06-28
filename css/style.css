@@ -244,9 +244,6 @@ input[type=submit] {
         color: #777777;
     }
 
-    footer
-
-
 }
 
 @media screen and (max-width: 768px) {
@@ -276,10 +273,9 @@ input[type=submit] {
     
     #social {
         width: 100%;
-        vertical-align: top
+        vertical-align: top;
+        margin-bottom: 15px;
     }
-
-    
 
 }
 
@@ -327,7 +323,7 @@ input[type=submit] {
     ul {
         align-content: center;
         text-align: center;
-        margin-left: -85px;
+        margin-left: -80px;
     }
 
     li {
@@ -342,7 +338,8 @@ input[type=submit] {
     
     #social {
         width: 100%;
-        vertical-align: top
+        vertical-align: top;
+        margin-bottom: 15px;
     }
 
 
