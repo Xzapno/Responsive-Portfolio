@@ -265,7 +265,7 @@ input[type=reset] {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 745px) {
 
     .headCenter {
         max-width: 768px;
@@ -275,7 +275,7 @@ input[type=reset] {
 
     .container {
         clear: both;
-        max-width: 650px;
+        max-width: 600px;
         margin: 0px 20px 0px 20px;
         background: white;
         border: 1px solid #dddddd;
@@ -331,7 +331,8 @@ input[type=reset] {
     .container {
         clear: both;
         max-width: 535px;
-        margin: 0px 20px 0px 20px;
+        display: block;
+        margin: 0 auto;
         background: white;
         border: 1px solid #dddddd;
     }
@@ -374,6 +375,16 @@ input[type=reset] {
         margin: 8px 0px 20px 0px;
         font-size: 16px;
         color: #777777;
+    }
+
+}
+
+
+@media screen and (max-width: 635px) {
+    .container {
+        width: 400px;
+        display: block;
+        margin: 0 auto;
     }
 
 }
