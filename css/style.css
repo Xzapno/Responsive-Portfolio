@@ -71,17 +71,18 @@ footer {
     flex-shrink: 0;
 }
 
-#copyright {
-    width: 90%;
-    height: 40px;
+/* #copyright {
+    display: block;
+    margin-top: 0;
+    height: 20px;
     text-align: center;
-    float: left;
-}
+} */
 
 #social {
-    width: 10%;
-    float: right;
-    vertical-align: top
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    /* margin-right:10px; */
 }
 
 /** === Text Elements === */
@@ -120,6 +121,10 @@ a:hover {
     text-decoration: none;
     color: #4aaaa5;
 }
+
+/* .footText {
+    margin-left: 120px;
+} */
 
 /* === Images === */
 
