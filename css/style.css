@@ -56,16 +56,6 @@ header {
     flex: 1 0 auto;
 } 
 
-.bioLeft {
-    float: left;
-    width: 20%;
-}
-
-.bioRight {
-    width: 80%;
-    float: right;
-    vertical-align: top;
-}
 
 footer {
     width: 100%;
@@ -223,7 +213,7 @@ input[type=reset] {
     cursor: pointer;
 }
 
-/* ==== fMedia Queriess === */
+/* ==== Media Queriess === */
 
 @media screen and (max-width: 980px) {
     
@@ -330,7 +320,7 @@ input[type=reset] {
 
     .container {
         clear: both;
-        max-width: 535px;
+        max-width: 500px;
         display: block;
         margin: 0 auto;
         background: white;
@@ -385,6 +375,12 @@ input[type=reset] {
         width: 400px;
         display: block;
         margin: 0 auto;
+    }
+
+    .figure {
+        display: block;
+        margin: 40px auto 0px auto;
+        text-align: left;
     }
 
 }
